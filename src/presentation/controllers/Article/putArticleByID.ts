@@ -1,6 +1,5 @@
 import { Controller } from 'domain/models'
 import { PutArticleByID } from 'domain/usecases/Article'
-import { app, storage } from 'main/config/firebase'
 
 import { InvalidParamError } from 'presentation/errors'
 import { badRequest, serverError, success } from 'presentation/helpers'

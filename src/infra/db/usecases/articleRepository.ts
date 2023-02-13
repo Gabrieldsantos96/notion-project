@@ -16,7 +16,6 @@ export class ArticleRepository
     await articleCollection.find().forEach((e) => {
       articles.push(mongoHelper.objMapper(e))
     })
-
     return articles
   }
 
@@ -24,8 +23,7 @@ export class ArticleRepository
     const articleCollection = await mongoHelper.getCollection('article')
     const filter = { _id: new ObjectId(articleId) }
     const article = await articleCollection.findOne(filter)
-
-    return mongoHelper.objMapper(article)
+    return article && mongoHelper.objMapper(article)
   }
 
   async putArticleByID(
