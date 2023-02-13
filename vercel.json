@@ -4,13 +4,7 @@
     "builds":[
         {
             "src":"src/main/server.ts",
-            "use": "@vercel/node",
-            "entrypoints":[
-                {
-                    "src":"src/main/server.ts",
-                    "dest":"api/server.js"
-                }
-            ]
+            "use": "@vercel/node"
         }
     ],
     "routes":[
