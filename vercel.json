@@ -1,0 +1,14 @@
+{
+    "version":2,
+    "public":true,
+    "build": {
+        "src":"src/main/server.ts",
+        "use": "@vercel/node"
+    },
+    "routes":[
+        {
+            "src":"/(.*)",
+            "dest":"/"
+        }
+    ]
+}

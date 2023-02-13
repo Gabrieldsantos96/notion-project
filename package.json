@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "gsantos <gabrieltemp.mobile@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node":"14.x"
+  },
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
