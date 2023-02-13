@@ -1,10 +1,18 @@
 {
     "version":2,
     "public":true,
-    "build": {
-        "src":"src/main/server.ts",
-        "use": "@vercel/node"
-    },
+    "builds":[
+        {
+            "src":"src/main/server.ts",
+            "use": "@vercel/node",
+            "entrypoints":[
+                {
+                    "src":"src/main/server.ts",
+                    "dest":"api/server.js"
+                }
+            ]
+        }
+    ],
     "routes":[
         {
             "src":"/(.*)",
