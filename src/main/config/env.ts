@@ -2,6 +2,6 @@
 require('dotenv').config()
 
 export default {
-  mongoUrl: process.env.MONGO_URL,
+  mongoUrl: process.env.MONGO_URL || '@example',
   port: process.env.PORT || 3333
 }
