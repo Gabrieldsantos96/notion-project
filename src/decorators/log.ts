@@ -1,5 +1,5 @@
-import { Controller } from 'domain/models/Controller'
-import { httpRequest, httpResponse } from 'presentation/models'
+import { Controller } from '@domain/models/Controller'
+import { httpRequest, httpResponse } from '@presentation/models'
 
 export class LogControllerDecorator implements Controller {
   private readonly controller: Controller

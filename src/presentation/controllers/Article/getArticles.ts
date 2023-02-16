@@ -1,7 +1,7 @@
-import { Controller } from 'domain/models'
-import { GetArticles } from 'domain/usecases/Article'
-import { serverError, success } from 'presentation/helpers'
-import { httpResponse } from 'presentation/models'
+import { Controller } from '@domain/models'
+import { GetArticles } from '@domain/usecases/Article'
+import { serverError, success } from '@presentation/helpers'
+import { httpResponse } from '@presentation/models'
 
 export class GetAllArticlesController implements Controller {
   private readonly db: GetArticles

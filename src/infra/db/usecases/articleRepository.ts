@@ -2,9 +2,9 @@ import {
   GetArticleByID,
   GetArticles,
   PutArticleByID
-} from 'domain/usecases/Article'
+} from '@domain/usecases/Article'
 import { mongoHelper } from '../helpers/mongo-helper'
-import { Article } from 'domain/models'
+import { Article } from '@domain/models'
 import { ObjectId } from 'mongodb'
 
 export class ArticleRepository

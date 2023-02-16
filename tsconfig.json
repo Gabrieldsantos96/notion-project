@@ -1,10 +1,23 @@
 {
-    "compilerOptions": {
-        "outDir": "./dist",
-        "module": "commonjs",
-        "target": "es2021",
-        "baseUrl": "./src",
-        "esModuleInterop": true,
-        "allowJs": true
-    }
+  "compilerOptions": {    
+    "baseUrl": "." ,
+    "paths": {
+    "@data/*": ["src/data/*"],
+    "@decorators/*": ["src/decorators/*"],
+    "@domain/*": ["src/domain/*"],
+    "@infra/*": ["src/infra/*"],
+    "@main/*": ["src/main/*"],
+    "@presentation/*": ["src/presentation/*"],
+    "@utils/*": ["src/utils/*"],
+    },                    
+    "target": "es6",                               
+    "module": "commonjs",                           
+    "outDir": "./dist",                             
+    "rootDir": ".",                             
+    "moduleResolution": "node",
+    "esModuleInterop": true,                       
+  },
+  "exclude":[
+    "./node_modules"
+  ]
 }

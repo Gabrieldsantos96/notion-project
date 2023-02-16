@@ -1,10 +1,10 @@
-import { Controller } from 'domain/models'
-import { PutArticleByID } from 'domain/usecases/Article'
+import { Controller } from '@domain/models'
+import { PutArticleByID } from '@domain/usecases/Article'
 
-import { InvalidParamError } from 'presentation/errors'
-import { badRequest, serverError, success } from 'presentation/helpers'
-import { httpRequest, httpResponse } from 'presentation/models'
-import { idValidatorAdapter } from 'presentation/models/idValidator'
+import { InvalidParamError } from '@presentation/errors'
+import { badRequest, serverError, success } from '@presentation/helpers'
+import { httpRequest, httpResponse } from '@presentation/models'
+import { idValidatorAdapter } from '@presentation/models/idValidator'
 
 export class PutArticleController implements Controller {
   private readonly db: PutArticleByID

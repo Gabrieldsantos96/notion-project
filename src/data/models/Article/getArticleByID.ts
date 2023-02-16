@@ -1,4 +1,4 @@
-import { Article } from 'domain/models'
+import { Article } from '@domain/models/Article'
 
 export interface getByIDRepository {
   getArticleByID(id: Pick<Article, 'id'>): Promise<Article>

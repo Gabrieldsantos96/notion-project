@@ -1,5 +1,7 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+require('dotenv').config()
+
 export default {
-  mongoUrl:
-    'mongodb+srv://gsantos:marapicu@cluster0.xvucjq8.mongodb.net/node-api?retryWrites=true&w=majority',
+  mongoUrl: process.env.MONGO_URL,
   port: process.env.PORT || 3333
 }

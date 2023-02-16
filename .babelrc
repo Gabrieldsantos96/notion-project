@@ -1,8 +1,16 @@
 {
-  "presets": [["@babel/preset-env", {
-    "targets": {
-      "node": "current"
-    }
-  }], "@babel/preset-typescript"],
-  "plugins": ["@babel/plugin-transform-runtime"]
+  "presets": ["@babel/preset-env","@babel/preset-typescript"],
+  "plugins": [
+    ["module-resolver", {
+      "alias": {
+        "@data": "./src/data",
+        "@decorators": "./src/decorators",
+        "@domain": "./src/domain",
+        "@infra": "./src/infra",
+        "@main": "./src/main",
+        "@presentation": "./src/presentation",
+        "@utils": "./src/utils"
+      }
+    }]
+  ]
 }

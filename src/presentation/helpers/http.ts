@@ -1,5 +1,5 @@
-import { httpResponse } from 'presentation/models/http'
-import { ServerError } from 'presentation/errors'
+import { httpResponse } from '@presentation/models/http'
+import { ServerError } from '@presentation/errors'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function success(data: any): httpResponse {

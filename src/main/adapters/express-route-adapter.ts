@@ -1,6 +1,6 @@
-import { Controller } from 'domain/models/Controller'
+import { Controller } from '@domain/models/Controller'
 import { Response, Request } from 'express'
-import { httpRequest, httpResponse } from 'presentation/models'
+import { httpRequest, httpResponse } from '@presentation/models'
 
 export const adaptRoute = (controller: Controller) => {
   return async (req: Request, res: Response) => {

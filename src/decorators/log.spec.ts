@@ -1,6 +1,6 @@
-import { Controller } from 'domain/models/Controller'
+import { Controller } from '@domain/models/Controller'
 import { LogControllerDecorator } from './log'
-import { httpRequest, httpResponse } from 'presentation/models'
+import { httpRequest, httpResponse } from '@presentation/models'
 
 const makeController = () => {
   class ControllerStub implements Controller {

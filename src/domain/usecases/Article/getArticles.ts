@@ -1,4 +1,4 @@
-import { Article } from 'domain/models'
+import { Article } from '@domain/models'
 
 export interface GetArticles {
   getArticles(): Promise<Article[]>

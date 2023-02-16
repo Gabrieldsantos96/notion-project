@@ -1,9 +1,9 @@
-import { Article, Controller } from 'domain/models'
-import { GetArticleByID } from 'domain/usecases/Article/'
-import { InvalidParamError } from 'presentation/errors'
-import { badRequest, serverError, success } from 'presentation/helpers'
-import { httpRequest, httpResponse } from 'presentation/models'
-import { idValidatorAdapter } from 'presentation/models/idValidator'
+import { Article, Controller } from '@domain/models'
+import { GetArticleByID } from '@domain/usecases/Article/'
+import { InvalidParamError } from '@presentation/errors'
+import { badRequest, serverError, success } from '@presentation/helpers'
+import { httpRequest, httpResponse } from '@presentation/models'
+import { idValidatorAdapter } from '@presentation/models/idValidator'
 
 export class GetArticleByIDController implements Controller {
   private readonly db: GetArticleByID

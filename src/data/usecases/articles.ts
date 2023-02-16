@@ -1,10 +1,10 @@
-import { Article } from 'domain/models'
+import { Article } from '@domain/models/Article'
 import {
   getAllRepository,
   getByIDRepository,
   putByIDRepository
 } from '../models/Article/'
-import { ArticleRepository } from 'infra/db/usecases/articleRepository'
+import { ArticleRepository } from '@infra/db/usecases/articleRepository'
 
 export class DBArticle
   implements getAllRepository, getByIDRepository, putByIDRepository
